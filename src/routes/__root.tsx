@@ -78,12 +78,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "CRUCE" },
+      { title: "CR×CE" },
       {
         name: "description",
         content: "Colecciona e intercambia stickers de los eventos donde estuviste.",
       },
-      { property: "og:title", content: "CRUCE" },
+      { property: "og:title", content: "CR×CE" },
       {
         property: "og:description",
         content: "Colecciona e intercambia stickers de los eventos donde estuviste.",

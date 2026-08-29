@@ -5,8 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * CRUCE design system — dark mode permanente, minimalista y tecnológico.
- * Acento naranja #FF8A3D usado con moderación.
+ * CR×CE design system — dark mode permanente, minimalista y tecnológico.
+ * Fondo #08080C, acento naranja #FF8A3D usado con moderación.
  */
 
 @theme inline {
@@ -50,7 +50,7 @@
 
 :root {
   --radius: 1rem;
-  --background: oklch(0.14 0.012 285);
+  --background: oklch(0.135 0.042 118);
   --foreground: oklch(0.97 0.003 285);
   --surface: oklch(0.19 0.015 285);
   --surface-2: oklch(0.24 0.018 285);
@@ -58,7 +58,7 @@
   --card-foreground: oklch(0.97 0.003 285);
   --popover: oklch(0.19 0.015 285);
   --popover-foreground: oklch(0.97 0.003 285);
-  --primary: oklch(0.75 0.16 51);
+  --primary: oklch(0.753 0.247 82);
   --primary-foreground: oklch(0.16 0.02 51);
   --secondary: oklch(0.24 0.018 285);
   --secondary-foreground: oklch(0.97 0.003 285);
@@ -71,7 +71,7 @@
   --success: oklch(0.78 0.14 163);
   --border: oklch(0.3 0.018 285);
   --input: oklch(0.3 0.018 285);
-  --ring: oklch(0.75 0.16 51);
+  --ring: oklch(0.753 0.247 82);
 
   --rarity-common: oklch(0.68 0.01 285);
   --rarity-rare: oklch(0.8 0.11 205);
