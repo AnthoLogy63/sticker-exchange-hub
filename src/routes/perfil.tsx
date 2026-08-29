@@ -7,12 +7,12 @@ import { badges, profile, stickers } from "@/lib/cruce-data";
 export const Route = createFileRoute("/perfil")({
   head: () => ({
     meta: [
-      { title: "Perfil — CRUCE" },
+      { title: "Perfil — CR×CE" },
       {
         name: "description",
-        content: "Tu identidad en CRUCE: eventos asistidos, insignias y stickers destacados.",
+        content: "Tu identidad en CR×CE: eventos asistidos, insignias y stickers destacados.",
       },
-      { property: "og:title", content: "Perfil — CRUCE" },
+      { property: "og:title", content: "Perfil — CR×CE" },
       { property: "og:description", content: "Eventos, insignias y stickers destacados." },
     ],
   }),

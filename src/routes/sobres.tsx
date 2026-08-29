@@ -7,13 +7,13 @@ import { openPack, packs as initialPacks, rarityColorVar, type Pack, type Sticke
 export const Route = createFileRoute("/sobres")({
   head: () => ({
     meta: [
-      { title: "Sobres — CRUCE" },
+      { title: "Sobres — CR×CE" },
       {
         name: "description",
         content: "Abre tus sobres y descubre los stickers uno a uno con su rareza.",
       },
-      { property: "og:title", content: "Sobres — CRUCE" },
-      { property: "og:description", content: "El momento coleccionable de CRUCE." },
+      { property: "og:title", content: "Sobres — CR×CE" },
+      { property: "og:description", content: "El momento coleccionable de CR×CE." },
     ],
   }),
   component: SobresPage,
@@ -166,7 +166,7 @@ function PackArt() {
     <div className="animate-float relative flex h-64 w-44 items-center justify-center rounded-3xl border border-border bg-surface">
       <div className="absolute inset-x-6 top-6 h-px bg-border" />
       <div className="absolute inset-0 rounded-3xl bg-[radial-gradient(circle_at_50%_20%,color-mix(in_oklab,var(--color-primary)_22%,transparent),transparent_65%)]" />
-      <span className="relative font-display text-2xl tracking-[0.3em] text-primary">CRUCE</span>
+      <span className="relative font-display text-2xl tracking-[0.3em] text-primary">CR×CE</span>
     </div>
   );
 }

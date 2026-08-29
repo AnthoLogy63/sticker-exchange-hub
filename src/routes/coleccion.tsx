@@ -17,12 +17,12 @@ import {
 export const Route = createFileRoute("/coleccion")({
   head: () => ({
     meta: [
-      { title: "Colección — CRUCE" },
+      { title: "Colección — CR×CE" },
       {
         name: "description",
         content: "Tu álbum de insignias de eventos y stickers coleccionables agrupados por evento.",
       },
-      { property: "og:title", content: "Colección — CRUCE" },
+      { property: "og:title", content: "Colección — CR×CE" },
       { property: "og:description", content: "Insignias permanentes y stickers por rareza." },
     ],
   }),

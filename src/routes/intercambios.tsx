@@ -8,12 +8,12 @@ import { partnerStickers, profile, stickers } from "@/lib/cruce-data";
 export const Route = createFileRoute("/intercambios")({
   head: () => ({
     meta: [
-      { title: "Intercambios — CRUCE" },
+      { title: "Intercambios — CR×CE" },
       {
         name: "description",
         content: "Muestra tu QR, conéctate en persona e intercambia stickers cara a cara.",
       },
-      { property: "og:title", content: "Intercambios — CRUCE" },
+      { property: "og:title", content: "Intercambios — CR×CE" },
       { property: "og:description", content: "Intercambia stickers en persona durante el evento." },
     ],
   }),

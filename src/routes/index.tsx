@@ -6,13 +6,13 @@ import { Screen } from "@/components/cruce/Screen";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CRUCE — Escanea para cruzar" },
+      { title: "CR×CE — Escanea para cruzar" },
       {
         name: "description",
         content:
           "Escanea el QR del evento, consigue tu insignia y recibe sobres de stickers coleccionables.",
       },
-      { property: "og:title", content: "CRUCE — Escanea para cruzar" },
+      { property: "og:title", content: "CR×CE — Escanea para cruzar" },
       {
         property: "og:description",
         content: "Asiste, escanea y colecciona stickers de los eventos donde estuviste.",
@@ -30,7 +30,7 @@ function Index() {
   return (
     <Screen>
       <div className="flex min-h-[70vh] flex-col items-center justify-center text-center">
-        <p className="text-eyebrow">CRUCE</p>
+        <p className="text-eyebrow">CR×CE</p>
         <h1 className="mt-6 text-4xl font-semibold leading-tight">
           Escanea
           <br />
