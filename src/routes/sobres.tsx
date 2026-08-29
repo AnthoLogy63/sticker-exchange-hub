@@ -49,8 +49,9 @@ function SobresPage() {
     }
   }
 
-  if (phase === "opening") {
-    const s = revealed[index];
+  const current = revealed[index];
+  if (phase === "opening" && current) {
+    const s = current;
     const color = rarityColorVar[s.rarity];
     return (
       <Screen>
