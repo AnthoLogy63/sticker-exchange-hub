@@ -10,33 +10,73 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ColeccionRouteImport } from './routes/coleccion'
+import { Route as IntercambiosRouteImport } from './routes/intercambios'
+import { Route as PerfilRouteImport } from './routes/perfil'
+import { Route as SobresRouteImport } from './routes/sobres'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ColeccionRoute = ColeccionRouteImport.update({
+  id: '/coleccion',
+  path: '/coleccion',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IntercambiosRoute = IntercambiosRouteImport.update({
+  id: '/intercambios',
+  path: '/intercambios',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PerfilRoute = PerfilRouteImport.update({
+  id: '/perfil',
+  path: '/perfil',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SobresRoute = SobresRouteImport.update({
+  id: '/sobres',
+  path: '/sobres',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/coleccion': typeof ColeccionRoute
+  '/intercambios': typeof IntercambiosRoute
+  '/perfil': typeof PerfilRoute
+  '/sobres': typeof SobresRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/coleccion': typeof ColeccionRoute
+  '/intercambios': typeof IntercambiosRoute
+  '/perfil': typeof PerfilRoute
+  '/sobres': typeof SobresRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/coleccion': typeof ColeccionRoute
+  '/intercambios': typeof IntercambiosRoute
+  '/perfil': typeof PerfilRoute
+  '/sobres': typeof SobresRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/coleccion' | '/intercambios' | '/perfil' | '/sobres'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/coleccion' | '/intercambios' | '/perfil' | '/sobres'
+  id: '__root__' | '/' | '/coleccion' | '/intercambios' | '/perfil' | '/sobres'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ColeccionRoute: typeof ColeccionRoute
+  IntercambiosRoute: typeof IntercambiosRoute
+  PerfilRoute: typeof PerfilRoute
+  SobresRoute: typeof SobresRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +88,43 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/coleccion': {
+      id: '/coleccion'
+      path: '/coleccion'
+      fullPath: '/coleccion'
+      preLoaderRoute: typeof ColeccionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/intercambios': {
+      id: '/intercambios'
+      path: '/intercambios'
+      fullPath: '/intercambios'
+      preLoaderRoute: typeof IntercambiosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/perfil': {
+      id: '/perfil'
+      path: '/perfil'
+      fullPath: '/perfil'
+      preLoaderRoute: typeof PerfilRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sobres': {
+      id: '/sobres'
+      path: '/sobres'
+      fullPath: '/sobres'
+      preLoaderRoute: typeof SobresRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ColeccionRoute: ColeccionRoute,
+  IntercambiosRoute: IntercambiosRoute,
+  PerfilRoute: PerfilRoute,
+  SobresRoute: SobresRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
